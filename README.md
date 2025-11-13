@@ -25,7 +25,24 @@
 
 ## Решение
 
-1. 
+1. В [**main.tf**](https://github.com/Liberaty/rp_hw_03/blob/main/main.tf) создаем kms ключ и шифруем им s3-bucket.
+
+   - Проверяем, что ключ создался:
+
+   ![1.1.png](https://github.com/Liberaty/rp_hw_03/blob/main/img/1.1.png?raw=true)
+
+   - Файл зашифрован:
+
+   ![1.2.png](https://github.com/Liberaty/rp_hw_03/blob/main/img/1.2.png?raw=true)
+
+   - Теперь при попытке открыть файл по ссылке, получаем ошибку **AccessDenied**:
+
+   ![1.3.png](https://github.com/Liberaty/rp_hw_03/blob/main/img/1.3.png?raw=true)
+
+   - Однако можно сгенерировать ссылку и файл по ней будет доступен:
+
+   ![1.4.png](https://github.com/Liberaty/rp_hw_03/blob/main/img/1.4.png?raw=true)
+
 
 Пример bootstrap-скрипта:
 
